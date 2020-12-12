@@ -17,8 +17,13 @@
 
     </div>
     <div class="form-layout">
-        <form>
-            <input type="text" placeholder="Ask a 'Yes' or 'No' question and let the fates decide." class="input-question">
+        <!-- <form class="invalid" onsubmit="onSubmit(event)" name="firstForm" action="">
+            <input type="checkbox" name="isActive">
+            <input type="text" name="myName" >
+            <input type="submit" text="submit">
+        </form> -->
+        <form onsubmit="onSubmit(event)" name="firstForm" action="">
+            <input type="text" placeholder="Ask a 'Yes' or 'No' question and let the fates decide." class="input-question" name="userInput">
             <input type="submit" value="Ask" class="ask-button">
         </form>
     </div>

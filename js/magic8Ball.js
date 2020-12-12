@@ -8,11 +8,13 @@ const imagesArray = ['back1.svg', 'back2.svg', 'back3.svg',
 
 const title = document.querySelector('.header');
 const imagePlaceholder = document.querySelector('.image');
+const form = document.querySelector('.form-layout');
 
 function onSubmit(event) {
     event.preventDefault();
     const userInput = event.target.userInput.value;
     title.style.display = 'none';
     imagePlaceholder.style.display = 'none';
+    form.style.display = 'none';
     
 }

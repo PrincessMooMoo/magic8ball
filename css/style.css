@@ -23,7 +23,7 @@ body {
 }
 
 .form-layout {
-    width: 100%;
+    width: 33%;
     margin: auto;
     position: relative;
     flex-direction: column;
@@ -31,20 +31,23 @@ body {
 }
 
 .input-question {
-    width: 33%;
+    width: 100%;
     position: relative;
-    left: 33%;
 }
 
 .ask-button {
     width: 2.5rem;
     position: relative;
-    top: 1.5rem;
     font-weight: 500;
 }
-.front-ball {
+.image-position {
     position: relative;
     width: 33%;
     left: 36%;
     margin-bottom: 1rem;
+}
+
+.image-position img {
+    max-width: 100%;
+    height: auto;
 }

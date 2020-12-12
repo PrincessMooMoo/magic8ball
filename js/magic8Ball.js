@@ -6,8 +6,13 @@ const imagesArray = ['back1.svg', 'back2.svg', 'back3.svg',
     'back16.svg', 'back17.svg', 'back18.svg',
     'back19.svg', 'back20.svg'];
 
+const title = document.querySelector('.header');
+const imagePlaceholder = document.querySelector('.image');
+
 function onSubmit(event) {
     event.preventDefault();
     const userInput = event.target.userInput.value;
-    console.log(userInput);
+    title.style.display = 'none';
+    imagePlaceholder.style.display = 'none';
+    
 }

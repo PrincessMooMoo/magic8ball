@@ -11,24 +11,31 @@ const imagesArray = ['1', '2', '3', '4', '5', '6', '7',
                     '15', '16', '17', '18', '19', '20'];
 
 const title = document.querySelector('.header');
-const imagePlaceholder = document.querySelector('.image');
+const imagePlaceholder = document.querySelector('#answer');
 const form = document.querySelector('.form-layout');
+const image = document.querySelector('.image');
 
 function onSubmit(event) {
     event.preventDefault();
     const userInput = event.target.userInput.value;
     title.style.display = 'none';
-    imagePlaceholder.style.display = 'none';
+    image.style.display = 'none';
     form.style.display = 'none'; 
+
 }
 
 function displayRandomImage(imagePlaceholder){
     if(imagePlaceholder) {
         const newArray = imagesArray[Math.floor(Math.random() * 20)];
-        console.log(newArray);
-        const newImage = 'images/back' + newArray + '.svg';
-        console.log(newImage);
+        const newImage = document.createElement('img');
+        newImage.src = 'images/back' + newArray + '.svg';
+        document.body.appendChild(newImage);
+
+        console.log(newImage.src);
+        // console.log(newArray);
+        // const newImage = 'images/back' + newArray + '.svg';
+        // document.getElementsByClassName('.image').src = newImage;
+        // image.style.display = 'inline';
+        // console.log(newImage);
     }
 }
-
-displayRandomImage(imagePlaceholder);

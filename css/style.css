@@ -43,8 +43,9 @@ body {
 .image-position {
     position: relative;
     width: 33%;
-    left: 36%;
+    left: 33%;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .image-position img {

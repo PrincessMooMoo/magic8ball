@@ -11,7 +11,7 @@ const imagesArray = ['1', '2', '3', '4', '5', '6', '7',
                     '15', '16', '17', '18', '19', '20'];
 
 const title = document.querySelector('.header');
-const imagePlaceholder = document.querySelector('#answer');
+const imagePlaceholder = document.querySelector('#firstImage');
 const form = document.querySelector('.form-layout');
 const image = document.querySelector('.image');
 
@@ -28,14 +28,8 @@ function displayRandomImage(imagePlaceholder){
     if(imagePlaceholder) {
         const newArray = imagesArray[Math.floor(Math.random() * 20)];
         const newImage = document.createElement('img');
+        const answerImage = document.querySelector('#answers');
         newImage.src = 'images/back' + newArray + '.svg';
-        document.body.appendChild(newImage);
-
-        console.log(newImage.src);
-        // console.log(newArray);
-        // const newImage = 'images/back' + newArray + '.svg';
-        // document.getElementsByClassName('.image').src = newImage;
-        // image.style.display = 'inline';
-        // console.log(newImage);
+        answerImage.appendChild(newImage);
     }
 }

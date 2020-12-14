@@ -12,7 +12,7 @@ function onSubmit(event) {
     event.preventDefault();
     const userInput = event.target.userInput.value;
     console.log(userInput);
-    title.style.display = 'none';
+    title.style.visibility = 'hidden';
     image.style.display = 'none';
     form.style.display = 'none'; 
     return userInput;

@@ -4,8 +4,11 @@ html{
 }
 
 body {
-    background-color: #360546;
+    /* background-color: #360546; */
+    background-attachment: fixed;
     margin: 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#b3b3ff,#800080, #360546)
 }
 
 .title h1 {

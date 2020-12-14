@@ -10,24 +10,21 @@
     <div class="title">
         <h1 class="header">Questions? The Magic 8-Ball has answers.</h1>
     </div>
-    <!-- <div class="front-ball" id=frontBall>
-        <img src="images/front.svg">
-    </div> -->
+
     <div id="firstImage" class="image-position">
         <img src="images/front.svg" class="image">
     </div>
     <div class="form-layout">
-        <form onsubmit="onSubmit(event), displayRandomImage(event)" name="firstForm" action="">
+        <form onsubmit="onSubmit(event), displayRandomImage(event), displayInput(userInput)" name="firstForm" action="">
             <input type="text" placeholder="Ask a 'Yes' or 'No' question and let the fates decide." class="input-question" name="userInput">
             <input type="submit" value="Ask" class="ask-button">
         </form>
     </div>
+
     <div id="answers" class="image-position">
-        
     </div>
-
-
-
+    <div class="display-question">
+    </div>
 
     <script src="js/magic8Ball.js"></script>
 </body>

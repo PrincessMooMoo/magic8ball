@@ -23,7 +23,7 @@ function onSubmit(event) {
             form.classList.add('fade-out');
             form.style.visibility = 'hidden';
         }, 1000);
-
+        
     return userInput;
 }
 

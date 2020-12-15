@@ -7,11 +7,14 @@
 </head>
 
 <body>
+    <div class="display-question">
+    </div>
     <div id="answers" class="image-position answer-image">
     </div>
 
-    <div class="display-question">
-    </div>
+
+
+
     <div class="title">
         <h1 class="header">Questions? The Magic 8-Ball has answers.</h1>
     </div>
@@ -21,16 +24,17 @@
     </div>
     <div class="form-layout">
         <form onsubmit="onSubmit(event), displayRandomImage(event), displayInput(userInput)" name="firstForm" action="">
-            <input type="text" placeholder="Ask a 'Yes' or 'No' question and let the fates decide." class="input-question" name="userInput">
+            <input type="text" placeholder="Ask a 'Yes' or 'No' question and let the fates decide."
+                class="input-question" name="userInput">
             <input type="submit" value="Ask" class="ask-button">
         </form>
-    </div>
 
 
 
 
 
-    <script src="js/magic8Ball.js"></script>
+
+        <script src="js/magic8Ball.js"></script>
 </body>
 
 </html>

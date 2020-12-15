@@ -72,8 +72,8 @@ body {
     left: 33%;
     text-align: center;
     color: white;
-    /* z-index: 2; */
-    /* top: -2.80rem; */
+    z-index: 2;
+    top: 2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }

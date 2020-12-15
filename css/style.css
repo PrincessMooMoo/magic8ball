@@ -11,6 +11,16 @@ body {
     background-image: linear-gradient(#b3b3ff,#800080, #360546)
 }
 
+.fade-out{
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.fade-in{
+    opacity: 1;
+    transition: all 1s ease;
+}
+
 .title h1 {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

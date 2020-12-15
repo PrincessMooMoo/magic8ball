@@ -15,6 +15,14 @@ function onSubmit(event) {
     title.style.visibility = 'hidden';
     image.style.display = 'none';
     form.style.display = 'none'; 
+    // setTimeout(function() {
+    //     title.classList.add('fade-out');
+    //     title.style.visibility = 'hidden';
+    //     image.classList.add('fade-out');
+    //     image.style.display = 'none';
+    //     form.classList.add('fade-out');
+    //     form.style.display = 'none';
+    //     }, 2000);
     return userInput;
 }
 
@@ -25,9 +33,14 @@ function displayRandomImage(imagePlaceholder){
         const answerImage = document.querySelector('#answers');
         newImage.src = 'images/back' + newArray + '.svg';
         answerImage.appendChild(newImage);
+
+        // setTimeout(function() {
+
+        // }, 3000);
     }
 }
 
 function displayInput(userInput){
     displayQuestion.innerHTML = userInput.value;
 };
+

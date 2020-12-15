@@ -40,6 +40,12 @@ function displayRandomImage(imagePlaceholder){
 };
 
 function displayInput(userInput){
-    displayQuestion.innerHTML = userInput.value;
+    setTimeout(function() {
+        displayQuestion.innerHTML = userInput.value;
+    }, 2000)
 };
+
+// function displayInput(userInput){
+//     displayQuestion.innerHTML = userInput.value;
+// };
 

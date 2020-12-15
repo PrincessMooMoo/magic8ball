@@ -12,33 +12,32 @@ function onSubmit(event) {
     event.preventDefault();
     const userInput = event.target.userInput.value;
     console.log(userInput);
-    title.style.visibility = 'hidden';
-    image.style.display = 'none';
-    form.style.display = 'none'; 
-    // setTimeout(function() {
-    //     title.classList.add('fade-out');
-    //     title.style.visibility = 'hidden';
-    //     image.classList.add('fade-out');
-    //     image.style.display = 'none';
-    //     form.classList.add('fade-out');
-    //     form.style.display = 'none';
-    //     }, 2000);
+    // title.style.visibility = 'hidden';
+    // image.style.display = 'none';
+    // form.style.display = 'none';
+        setTimeout(function() {
+            title.classList.add('fade-out');
+            title.style.visibility = 'hidden';
+            image.classList.add('fade-out');
+            image.style.visibility = 'hidden';
+            form.classList.add('fade-out');
+            form.style.visibility = 'hidden';
+        }, 1000);
+
     return userInput;
 }
 
 function displayRandomImage(imagePlaceholder){
     if(imagePlaceholder) {
-        const newArray = imagesArray[Math.floor(Math.random() * 20)];
-        const newImage = document.createElement('img');
-        const answerImage = document.querySelector('#answers');
-        newImage.src = 'images/back' + newArray + '.svg';
-        answerImage.appendChild(newImage);
-
-        // setTimeout(function() {
-
-        // }, 3000);
+        setTimeout(function() {
+            const newArray = imagesArray[Math.floor(Math.random() * 20)];
+            const newImage = document.createElement('img');
+            const answerImage = document.querySelector('#answers');
+            newImage.src = 'images/back' + newArray + '.svg';
+            answerImage.appendChild(newImage);
+        }, 2000);
     }
-}
+};
 
 function displayInput(userInput){
     displayQuestion.innerHTML = userInput.value;

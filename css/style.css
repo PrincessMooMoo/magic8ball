@@ -77,3 +77,8 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+.answer-image{
+    position: relative;
+    top: 3rem;
+}

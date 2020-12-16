@@ -1,6 +1,6 @@
-const imagesArray = ['1', '2', '3', '4', '5', '6', '7', 
-                    '8', '9', '10', '11', '12', '13', '14',
-                    '15', '16', '17', '18', '19', '20'];
+const imagesArray = ['1', '2', '3', '4', '5', '6', '7',
+    '8', '9', '10', '11', '12', '13', '14',
+    '15', '16', '17', '18', '19', '20'];
 
 const title = document.querySelector('.header');
 const imagePlaceholder = document.querySelector('#firstImage');
@@ -15,21 +15,22 @@ function onSubmit(event) {
     // title.style.visibility = 'hidden';
     // image.style.display = 'none';
     // form.style.display = 'none';
-        setTimeout(function() {
-            title.classList.add('fade-out');
-            title.style.visibility = 'hidden';
-            image.classList.add('fade-out');
-            image.style.visibility = 'hidden';
-            form.classList.add('fade-out');
-            form.style.visibility = 'hidden';
-        }, 1000);
-        
+    setTimeout(function () {
+        title.classList.add('fade-out');
+        title.style.visibility = 'hidden';
+        image.classList.add('fade-out');
+        image.style.visibility = 'hidden';
+        form.classList.add('fade-out');
+        form.style.visibility = 'hidden';
+        imagePlaceholder.classList.add('fade-out');
+    }, 1000);
+    
     return userInput;
 }
 
-function displayRandomImage(imagePlaceholder){
-    if(imagePlaceholder) {
-        setTimeout(function() {
+function displayRandomImage(imagePlaceholder) {
+    if (imagePlaceholder) {
+        setTimeout(function () {
             const newArray = imagesArray[Math.floor(Math.random() * 20)];
             const newImage = document.createElement('img');
             const answerImage = document.querySelector('#answers');
@@ -39,11 +40,12 @@ function displayRandomImage(imagePlaceholder){
     }
 };
 
-function displayInput(userInput){
-    setTimeout(function() {
+function displayInput(userInput) {
+    setTimeout(function () {
         displayQuestion.innerHTML = userInput.value;
     }, 2000)
 };
+
 
 // function displayInput(userInput){
 //     displayQuestion.innerHTML = userInput.value;

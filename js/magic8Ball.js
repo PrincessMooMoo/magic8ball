@@ -7,14 +7,14 @@ const imagePlaceholder = document.querySelector('#firstImage');
 const form = document.querySelector('.form-layout');
 const image = document.querySelector('.image');
 const displayQuestion = document.querySelector(".display-question");
+const askButton = document.querySelector('.ask-button');
 
 function onSubmit(event) {
     event.preventDefault();
     const userInput = event.target.userInput.value;
     console.log(userInput);
-    // title.style.visibility = 'hidden';
-    // image.style.display = 'none';
-    // form.style.display = 'none';
+    askButton.style.display = 'none';
+
     setTimeout(function () {
         title.classList.add('fade-out');
         title.style.visibility = 'hidden';

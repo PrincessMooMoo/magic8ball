@@ -82,3 +82,18 @@ body {
     position: relative;
     top: 3rem;
 }
+
+@media(max-width: 740px){
+    .display-question {
+        width: 80%;
+        left: 10%;
+    }
+    .image-position {
+        width: 80%;
+        left: 10%;
+    }
+
+    .form-layout {
+        width: 50%;
+    }
+}
